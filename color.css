@@ -22,7 +22,7 @@
   --cim-color: #b8d7ff;
   --link-btn-color: #effffd;
   --submit-btn-color: #b8d7ff;
-  --hover-color:#59b1f8dc;
+  --hover-color: #59b1f8dc;
 }
 
 :root,
@@ -51,8 +51,8 @@
   --code-color: #00b3fe;
   --cim-color: #00b3fe;
   --submit-btn-color: #00b3fe;
-  --link-btn-color:#9465e0;
-  --hover-color:#9465e0;
+  --link-btn-color: #9465e0;
+  --hover-color: #9465e0;
 }
 
 * {
@@ -99,7 +99,7 @@ thead {
 
 .plink {
   border-color: var(--border-color) !important;
-  background-color: var(  --link-btn-color);
+  background-color: var(--link-btn-color);
   color: var(--text-color);
 }
 

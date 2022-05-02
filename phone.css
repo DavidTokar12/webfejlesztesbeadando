@@ -43,4 +43,7 @@
   .tartalom-wrapper{
     display: none;
   }
+  table {
+    font-size: .6rem;
+  }
 }
