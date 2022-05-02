@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Mesterséges Intelligencia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./altalanos.css" />
+    <link rel="stylesheet" href="./desktop.css" />
+    <link rel="stylesheet" href="./tablet.css" />
+    <link rel="stylesheet" href="./phone.css" />
+    <link rel="stylesheet" href="./color.css" />
+    <script src="app_color.js"></script>
+    <script src="linkek.js"></script>
+</head>
+
+</html>
+
+<body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <navbar class="navbar fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+            <img id="logo" src="./logo_transparent_dark.png" alt="" width="50" height="50" />
+
+            <div class="form-check custom-control custom-switch form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                    onclick="changeColorTheme(event)" checked />
+            </div>
+        </div>
+    </navbar>
+    <!-- Navbar -->
+    <!-- Navbar -->
+
+    <aside id="aside">
+        <nav class="link-wrapper">
+            <a href="./index.html" class="plink plink-first text-center active border" aria-current="page">MI/AI</a>
+            <a href="./gepitanulas.html" class="plink text-center border">GÉPI TANULÁS</a>
+            <a href="./neuralis.html" class="plink text-center border">NEURLÁLIS HÁLÓZATOK</a>
+            <a href="./minimax.html" class="plink plink-last text-center border">MINIMAX ALGORITMUS</a>
+        </nav>
+
+        <nav class="tartalom-wrapper">
+            <ul class="linkek">
+                <li class="tartalom-link-style"><a class="tartalom-link" id="tlink1" onclick="goTo(event,1)" href="tart1"> Mi az a MI?</a></li>
+                <li  class="tartalom-link-style"><a  class="tartalom-link" id="tlink2" onclick="goTo(event,2)" href="tart2"> Hol tart jelenleg?</a></li>
+                <li  class="tartalom-link-style"><a class="tartalom-link"  id="tlink3" onclick="goTo(event,3)" href="tart3"> Mikor használjuk őket?</a></li>
+                <li  class="tartalom-link-style"><a class="tartalom-link"  id="tlink4" onclick="goTo(event,4)" href="tart4">Felhasználásai </a></li>
+                <li  class="tartalom-link-style"><a class="tartalom-link" id="tlink5" onclick="goTo(event,5)" href="tart5"> Mikre nem képesek?</a></li>
+                <li class="tartalom-link-style"><a class="tartalom-link"  id="tlink6" onclick="goTo(event,6)" href="tart6"> Oldal értékelése</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="text-wrapper ">
+        <div class="inner-text-wrapper ">
+
+            <article id="tart1">
+                <h1>
+                    Mit nevezünk<br />
+                    <span class="focim ">Mesterséges</span><br />
+                    <span class="focim ">Intelligenciának</span>?
+                </h1>
+                <hr />
+
+                <p>
+                    A mesterséges intelligencia ( MI , AI ) a gépek emberhez hasonló képességeit jelenti, mint például
+                    az érvelés, a tanulás, a tervezés és a kreativitás. Lehetővé teszi a technika számára, hogy
+                    érzékelje környezetét, foglalkozzon azzal, amit észlel, problémákat
+                    oldjon meg, és konkrét cél elérése érdekében tervezze meg lépéseit. A számítógép nemcsak adatokat
+                    fogad (már előkészített vagy összegyűjtött adatokat érzékelőin, például kameráján keresztül), hanem
+                    fel is dolgozza azokat és reagál
+                    rájuk.
+                </p>
+
+                <hr />
+            </article>
+
+
+            <article id="tart2">
+                <h2>
+                    Hol tart jelenleg a mesterséges intelligencia, és mit várhatunk tőle a jövőben?
+                </h2>
+
+                <hr />
+                <p>
+                    Jelenleg még csak különleges MI-k ről beszélhetünk.Ezek egy általános MI-vel szemben kizárólag egy
+                    feladat végrehajtására képesek. Az előbb említett általános MI már sokkal jobban hasonlít egy
+                    intelligens élőlényre mint csak egy számítógépes programra.Képes
+                    gondolkodni, esetleg van akarata vagy akár vannak érzései.Sokak számára hihetetlennek tűnhet, de
+                    ezek az MI-k lassan kezdenek kimászni a Sci-fi-filmekből és lehet, hogy már életben van az a személy
+                    aki először beszélhet egyel közülük.
+                </p>
+                <hr />
+            </article>
+
+            <article id="tart3">
+                <h2>Mikor használhatjuk őket fel?</h2>
+                <hr />
+                <p>
+                    Ahhoz hogy használhatóvá váljon egy különleges MI, jobban, vagy olcsóban , vagy gyorsabban kell
+                    tudnia végeznie egy feladatot mint egy emberi vetélytársának.Jelenleg az MI-k nagy erőssége abban
+                    rejlik, hogy hatalmas mennyiségű adatotott képesek feldolgozni,
+                    sose fáradnak el,nem vesztik el a fókuszt és nem felejtenek.
+                </p>
+                <hr />
+            </article>
+
+
+            <article id="tart4">
+                <h2>Jelenlegi felhasználások:</h2>
+
+                <hr />
+                <table class="table table-sm text-center align-middle table-bordered ">
+                    <thead>
+                        <tr>
+                            <th scope="col ">Felhasználás:</th>
+                            <th scope="col ">Magyarázatt:</th>
+                            <th colspan="2 " scope="col ">Példák:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <th scope="row ">Útvonal tervezés</th>
+                            <td>Nagy mennyiségű adat elemzésével az MI-k képesek megtalálni a legoptimálisabb útvonalat.
+                            </td>
+                            <td>Légi társaságok</td>
+                            <td>Google Maps</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row ">"Önvezető autók "</th>
+                            <td>Jelenleg az MI-k még képtelenek önállóan vezetni, de egyes tevékenységekben
+                                (parkolás,sáv váltás) a segítségünkre lehetnek.</td>
+                            <td>Tesla</td>
+                            <td>Ubber</td>
+                        </tr>
+                        <tr>
+                            <th scope="row ">Adat elemzés:</th>
+                            <td>MI-k ragyognak ha adatok elemzéséről van szó.</td>
+                            <td>Orvostudomány összefügéseket vesz észre
+                            </td>
+                            <td>Marketing</td>
+                        </tr>
+                        <tr>
+                            <th scope="row ">Biztonsági rendszerek:</th>
+                            <td>MI-k képesek az arcfelismerésre, mindig képesek megtartani a fókuszt.</td>
+                            <td>Bankok adó csalásnál</td>
+                            <td>FBI</td>
+                        </tr>
+                        <tr>
+                            <th scope="row ">Felhasználói élmény javítása:</th>
+                            <td>Nagyobb cégek elraktározzák a felhasználók adatati, amit élményeik javítására
+                                használnak.Képesek "emberibb " tevékenységekre.</td>
+                            <td>Instagram személyre szabot tartalom</td>
+                            <td>Snapchat arcfelismerés</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <hr />
+
+            <article id="tart5">
+                <h2>Mikre nem képesek az MI-k?</h2>
+
+                <hr />
+                <p>
+                    <section>
+                        A fenti listát még nagyon sokáig lehetne bővíteni.Ezért inkább foglalkozunk azzal, hogy mikre
+                        nem képesek még az MIk.Szinte minden szakmában a segítségünkre lehetnek, de még bonyolult
+                        feladatokra ahol a megbízhatóság lényeges nem elég érettek sajnos.
+                        Iyen például a feljebb említett autók vezetése, bűnözők elítélése, értelmes beszélgetések
+                        folytatása, programozás, betegek kezelése.Ezeket a feladatokat továbbra is tanult emberek fogják
+                        végezni.
+                    </section>
+                    <section>
+                        És valószínűleg egyes feladatokban soha nem fogja az embereket egy MI lecserélni, mint például a
+                        gyerekek nevelése, a párkapcsolati igények kielégítése, művészet megalkotása....lényegébe minden
+                        amihez erős emberi érzések kapcsolódnak.Technikailag egy
+                        fejlett MI ezeket a feladatokat gond nélkül eltudna végezni, de az érzéseinkre valószínűleg
+                        sosem fog tudni úgy hatni mint egy másik ember.
+                    </section>
+                </p>
+                <hr />
+            </article>
+
+
+
+
+
+
+
+            <article id="tart6">
+                <h2>Kérem értékelje oldalunkat:</h2>
+                <form action="mailto:dt@gmail.com ">
+
+                    <div class="form-wrapper ">
+                        <fieldset class="radio-wrapper border rounded m-4 ">
+                            <div class="m-2 ">
+                                <label for="nev-input ">Neve:</label>
+                                <input type="text " id="nev-input " placeholder="Ide írja le a nevét " size="50 "
+                                    name="nev " maxlength="50 " aria-label="name " class="form-control " />
+                            </div>
+                        </fieldset>
+
+                        <div class="border radio-wrapper m-4 rounded ">
+                            <fieldset class="m-2 ">
+                                <span class=" ">Oldal értékelése:</span>
+                                <div class="input-group justify-content-center">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="ertekeles"
+                                            id="inlineRadio1" value="1" />
+                                        <label class="form-check-label" for="inlineRadio1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="ertekeles"
+                                            id="inlineRadio2" value="2" />
+                                        <label class="form-check-label" for="inlineRadio2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="ertekeles"
+                                            id="inlineRadio3" value="3" />
+                                        <label class="form-check-label" for="inlineRadio3">3 </label>
+                                    </div>
+                                    <div class="form-check form-check-inline ">
+                                        <input class="form-check-input" type="radio" name="ertekeles" id="inlineRadio4" value="4" />
+                                        <label class="form-check-label" for="inlineRadio4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="ertekeles" id="inlineRadio5" value="5" />
+                                        <label class="form-check-label" for="inlineRadio5">5 </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="radio-wrapper m-4 border rounded">
+                            <fieldset class="m-2">
+                                <label for="floatingTextarea2">Javaslatai:</label>
+                                <textarea class="form-control" placeholder="Ide írja le a javaslatait "
+                                    id="floatingTextarea2"></textarea>
+                            </fieldset>
+                        </div>
+                        <div class="radio-wrapper m-4 border rounded">
+                            <fieldset class=" d-flex align-items-center">
+                                <input class="form-check-input m-2" type="checkbox" value="jartas" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    Jártas a mesterséges intelligenciában?
+                                </label>
+                            </fieldset>
+                        </div>
+                        <div class="radio-wrapper m-4 border rounded ">
+                            <fieldset class="m-2 text-center ">
+                                <input type="reset " value="Törlés " class="btn reset-button ">
+                                <input type="submit " value="Elküldés " class="btn submit-button ">
+                            </fieldset>
+                        </div>
+                    </div>
+                </form>
+            </article>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer class="footer ">
+        <div class="container f2 ">
+            <span class="text-muted ">@2022 Contact:<a class="inline-link" href="mailto: 1413david@gmail.com">1413david@gamil.com</a>.</span>
+        </div>
+    </footer>
+</body>

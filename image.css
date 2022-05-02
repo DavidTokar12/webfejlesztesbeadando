@@ -1,0 +1,31 @@
+.page-images {
+  width: 100%;
+}
+.page-images:hover {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.openImageWrapper {
+  position: fixed;
+  z-index: 99999999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.btn-close {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.openImg {
+  width: auto;
+  max-height: 80%;
+  max-width: 80%;
+}

@@ -1,0 +1,154 @@
+:root.light {
+  /* --navbar-aside-color: #b8d7ff;
+  --navbar-aside-text-color: #0a1c29;
+  --switch-color: #effffd;
+  --switch-border-color: #0a1c2962;
+  --border-color: #0a1c2962;
+  --button-border-color: #0a1c2962;
+  --text-background: #effffd;
+  --font-color: #22222288;
+  --switch-hover-color: #b8d7ff;
+  --cim-color: #0a1c2962;
+  --radio-color: #79757588;
+  --active-link: #effffd;
+  --active-inline-link: #121212;
+  --active-inline-hover-link: #b8d7ff; */
+
+  --main-color: #b8d7ff;
+  --secondary-color: #effffd;
+  --text-color: #22222288;
+  --border-color: #0a1c2962;
+  --code-color: #6a7eeedc;
+  --cim-color: #b8d7ff;
+  --link-btn-color: #effffd;
+  --submit-btn-color: #b8d7ff;
+  --hover-color:#59b1f8dc;
+}
+
+:root,
+:root.dark {
+  /* --navbar-aside-color: #121212;
+  --navbar-aside-text-color: #0a1c29;
+  --navbar-text-color: #ffffff;
+  --switch-color: #7a04eb;
+  --switch-border-color: #7a04eb;
+  --switch-hover-color: #7a04eb;
+  --border-color: #7b04eb96;
+  --button-border-color: #a204eb;
+  --text-background: #121212;
+  --font-color: #ffffff;
+  --cim-color: #00b3fe;
+  --radio-color: #7a04eb;
+  --active-link: #00b3fe;
+  --active-inline-link: #7a04eb;
+  --active-inline-hover-link: #00b3fe;
+  --code-color: #a204eb; */
+
+  --main-color: #121212;
+  --secondary-color: #121212;
+  --text-color: #ffffff;
+  --border-color: #7a50b0;
+  --code-color: #00b3fe;
+  --cim-color: #00b3fe;
+  --submit-btn-color: #00b3fe;
+  --link-btn-color:#9465e0;
+  --hover-color:#9465e0;
+}
+
+* {
+  transition: background-color 0.5s ease;
+  transition: color 0.3s ease;
+  color: var(--text-color);
+}
+
+.tartalom-link {
+  color: var(--text-color);
+}
+
+.tartalom-link:hover {
+  color: var(--hover-color);
+  transition: color 0s ease;
+}
+
+.current {
+  color: var(--code-color);
+}
+.inline-link {
+  color: var(--cim-color);
+}
+.inline-link:hover {
+  color: var(--hover-color);
+}
+.footer {
+  background-color: var(--main-color);
+  border-color: var(--border-color) !important;
+}
+
+.navbar {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+tr:hover {
+  background-color: var(--border-color);
+}
+thead {
+  background-color: var(--border-color) !important;
+}
+
+.plink {
+  border-color: var(--border-color) !important;
+  background-color: var(  --link-btn-color);
+  color: var(--text-color);
+}
+
+.plink:hover {
+  color: var(--text-color);
+  background-color: var(--hover-color);
+}
+
+aside {
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.form-check-input {
+  background-color: var(--main-color) !important;
+  border-color: var(--border-color) !important;
+  box-shadow: 0 0 0 0rem var(--main-color) !important;
+}
+
+.text-wrapper {
+  background-color: var(--secondary-color);
+}
+
+.radio-wrapper {
+  border-color: var(--border-color);
+}
+
+.radio-wrapper {
+  border-color: var(--border-color) !important;
+}
+
+.focim {
+  background-color: var(--cim-color);
+}
+.form-wrapper {
+  border-color: var(--border-color);
+}
+.form-check-input {
+  background-color: var(--main-color) !important;
+}
+
+.submit-button {
+  background-color: var(--submit-btn-color) !important;
+}
+
+.reset-button {
+  border-color: var(--border-color);
+}
+.code {
+  background-color: var(--code-color);
+}

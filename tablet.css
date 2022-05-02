@@ -1,0 +1,34 @@
+@media screen and (max-width: 992px) {
+  aside {
+    height: 100%;
+    width: 20rem;
+  }
+  .link-wrapper {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .plink {
+    height: 3.2rem;
+    width: 14rem;
+  }
+  .plink-first {
+    border-radius: 1rem 1rem 0 0;
+  }
+  .plink-last {
+    border-radius: 0 0 1rem 1rem;
+  }
+  .text-wrapper {
+    padding-top: var(--navbar-height);
+    padding-right: 20rem;
+  }
+  .inner-text-wrapper{
+    width: 25rem;
+}
+.footer{
+    width: calc(100% - 20rem);
+}
+.focim{
+  font-size: 3rem;
+}
+}

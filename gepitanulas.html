@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Mesterséges Intelligencia</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./altalanos.css" />
+    <link rel="stylesheet" href="./desktop.css" />
+    <link rel="stylesheet" href="./tablet.css" />
+    <link rel="stylesheet" href="./phone.css" />
+    <link rel="stylesheet" href="./color.css" />
+    <link rel="stylesheet" href="./image.css"/>
+
+    
+    
+    
+    <script src="app_color.js"></script>
+    <script src="linkek.js"></script>
+    <script src="images.js" ></script>
+
+ 
+
+</head>
+
+</html>
+
+<body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+    <navbar class="navbar fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
+            <img id="logo" src="./media/logo_transparent_dark.png" alt="" width="50" height="50" />
+
+            <div class="form-check custom-control custom-switch form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                    onclick="changeColorTheme(event)" checked />
+            </div>
+        </div>
+    </navbar>
+    <!-- Navbar -->
+    <!-- Navbar -->
+
+    <aside id="aside">
+        <nav class="link-wrapper">
+            <a href="./index.html" class="plink plink-first text-center  border" aria-current="page">MI/AI</a>
+            <a href="./gepitanulas.html" class="plink text-center active border">GÉPI TANULÁS</a>
+            <a href="./neuralis.html" class="plink text-center border">NEURLÁLIS HÁLÓZATOK</a>
+            <a href="./minimax.html" class="plink plink-last text-center border">MINIMAX ALGORITMUS</a>
+        </nav>
+
+        <nav class="tartalom-wrapper">
+            <ul class="linkek">
+                <li class="tartalom-link-style"><a class="tartalom-link" id="tlink1" onclick="goTo(event,1)" href="tart1"> Mi az a gépi tanulás?</a></li>
+                <li  class="tartalom-link-style"><a  class="tartalom-link" id="tlink2" onclick="goTo(event,2)" href="tart2"> Példa</a></li>
+                <li  class="tartalom-link-style"><a class="tartalom-link"  id="tlink3" onclick="goTo(event,3)" href="tart3"> Lineáris regresszió</a></li>
+                <li  class="tartalom-link-style"><a class="tartalom-link"  id="tlink4" onclick="goTo(event,4)" href="tart4">1.lépés</a></li>
+                <li  class="tartalom-link-style"><a class="tartalom-link" id="tlink5" onclick="goTo(event,5)" href="tart5"> 2.lépés</a></li>
+                <li class="tartalom-link-style"><a class="tartalom-link"  id="tlink6" onclick="goTo(event,6)" href="tart6"> 3.lépés</a></li>
+                <li  class="tartalom-link-style"><a class="tartalom-link" id="tlink7" onclick="goTo(event,7)" href="tart7"> 4.lépés</a></li>
+                <li class="tartalom-link-style"><a class="tartalom-link"  id="tlink8" onclick="goTo(event,8)" href="tart8"> 5.lépés</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="text-wrapper ">
+        <div class="inner-text-wrapper ">
+
+            <article id="tart1">
+                <h1>
+                    Mi az a<br />
+                    <span class="focim ">Gépi</span><br />
+                    <span class="focim ">Tanulás</span>?
+                </h1>
+                <hr />
+
+                <p>
+                    A gépi tanulás a mesterséges inteligencia
+                    egyik ága, olyan rendszerekkel
+                    foglalkoznak, melyek tanulni képesek, azaz
+                    tapasztalatokból tudást generálnak.
+                    A gyakorlatban ez annyit tesz, hogy a
+                    rendszer példa adatokból képes
+                    szabályszerűségeket felismerni.Ezeket a
+                    szabályszerűségeket felhsználva pedig
+                    képes új adatokból is helyes
+                    következtetéseket levonni.          
+                </p>
+                
+
+                <video controls>
+                    <source  src="./media/gepitanulas.mp4" type="video/mp4">
+                </video>
+
+
+                <hr />
+
+
+            </article>
+
+
+            <article id="tart2">
+                <h2>
+                   Egy egyszerű példa:
+                </h2>
+
+                <hr />
+                <p>
+                    Tételezzük fel, hogy kutatást végzünk egy
+                    egyetemnek.Az egyetem kíváncsi lenne
+                    arra, hogy átlagosan hogy fog teljesíteni egy
+                    hallgató egy adot tárgyból, ha tudunk róla
+                    különböző adatokat.
+                    Hagyományos programozási módszerekkel
+                    nem sokra mennénk egy ilyen
+                    feladatnál.Pontosan ezért találták ki a gépi
+                    tanulást.
+                    A megoldáshoz lineáris regressziót fogunk
+                    használni.
+                </p>
+                <hr />
+            </article>
+
+            <article id="tart3">
+                <h2>Mi az a lineáris regresszió?</h2>
+                <hr />
+                <p>
+                    Ha most kíváncsiságból rákeres a lineáris
+                    regresszióra ehhez hasonló csodákat
+                    találhat:
+                </p>
+
+
+
+                <img class="page-images" onclick="openImage(event)" id="closedImage1" src="./media/linreg.png" alt="">
+                
+                <div class="openImageWrapper" id="openImage1">
+                    <button type="button" onclick="closeImage(event)" class="btn-close btn-close-white" aria-label="Close"></button>
+                    <img  src="./media/linregLarge.png" class="openImg">
+                </div>
+
+
+                <p>
+                    Szerencsére nekünk most a részletekkel
+                    nem kellesz foglalkoznunk, ezért elég ha
+                    csak nagyon felületesen megnézzük, hogy
+                    mit is jelent.
+                </p>
+                <p>
+                    <blockquote cite="https://hu.wikipedia.org/wiki/Line%C3%A1ris_regresszi%C3%B3">
+                    "a lineáris regresszió egy olyan
+                    paraméteres regressziós modell, mely
+                    feltételezi a magyarázó- (X) és a
+                    magyarázott (y) változó közti
+                    (paramétereiben) lineáris kapcsolatot"
+                   </blockquote>
+            </p>
+
+            <figure>
+            <img class="page-images" onclick="openImage(event)" id="closedImage2" src="./media/linreg2.png" alt="">
+            <figcaption>Lineáris regresszió példa</figcaption>
+            </figure>
+            
+            
+            <div class="openImageWrapper" id="openImage2">
+                <button type="button" onclick="closeImage(event)" class="btn-close btn-close-white" aria-label="Close"></button>
+                <img  src="./media/linreg2.png" class="openImg">
+            </div>
+
+
+
+            <p>
+                A képen a kék pontok mutatják az adatokat,
+                amelyből a programunk "tanul"
+                , a "tanulás"
+                alatt pedig azt értjük, hogy megkeresi azt az
+                egyenest (a képen pirossal jelölve) amely a
+                legjobban illeszkedik az adatokhoz.Így
+                amikor egy új adatot adunk a programnak,
+                az egyenes egyenlete segítségével
+                megtippeli, hogy milyen eredményre
+                számíthatunk.
+            </p>
+            <p>
+                Az lesz a különbség a fenti kép és a mi
+                példánk között, hogy a fenti képen lévő gráf
+                2 különböző adatot használ (x, y) ezért
+                lehetséges 2 dimenziós képernyőn
+                megjeleníteni, de a mi példánk 5 adatot fog
+                amit sajnos csak 5 dimenziós képernyőn
+                tudnánk illusztrálni, de a lényeg ugyan az, a
+                matekkal meg nem kellesz foglalkoznunk.
+            </p>
+                <hr />
+            </article>
+
+
+            <article id="tart4">
+                <h2>1.lépés</h2>
+                <p>
+                Szükségünk lesz adatokra.<a class="inline-link" href="https://archive.ics.uci.edu/ml/datasets/Stud">Az alábbi linkre
+                kattintva:</a>, letölthetünk valódi adatokat amiket egy
+                portugál iskoláknál jegyeztek fel.
+                Egy diák adatai így néznek ki:
+                </p>
+                
+                <hr />
+                <table  class="table table-sm text-center align-middle table-bordered ">
+                    <caption  class="text-center">Diákok Adatai <summary>Különböző adatok, amikből az MI tanulni fog.</summary> <details>1.oszlop:Adat neve <br> 2.oszlop:Adat</details></caption>
+                    <thead>
+                        <tr>
+                            <th scope="col ">Adat neve:</th>
+                            <th scope="col ">Adat:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>school;
+                            </td>
+                            <td>"GP";
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>sex;</td>
+                            <td>"F";</td>
+                        </tr>
+                        <tr>
+                            <td>age;</td>
+                            <td>18;</td>
+                        </tr>
+                        <tr>
+                            <td>address;</td>
+                            <td>"U";</td>
+                        </tr>
+
+                        <tr>
+                            <td>famsize;</td>
+                            <td>"GT3";</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pstatus;</td>
+                            <td>"A";</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pstatus;</td>
+                            <td>Google Maps</td>
+                        </tr>
+                        <tr>
+                            <td>Medu;</td>
+                            <td>4;</td>                      
+                        </tr>
+                        <tr>
+                            <td>Fedu;</td>
+                            <td>4;</td>
+                        </tr>
+                        <tr>
+                            <td>Mjob;</td>
+                            <td>"at_home";</td>
+                        </tr>
+                        <tr>
+                            <td>Fjob;</td>
+                            <td>"teacher";</td>
+                        </tr>
+                        <tr>
+                            <td>reason;</td>
+                            <td>"course";</td>
+                        </tr>
+                        <tr>
+                            <td>guardian;</td>
+                            <td>"mother";</td>
+                        </tr>
+                        <tr>
+                            <td>traveltime;</td>
+                            <td>2;</td>
+                        </tr>
+                        <tr>
+                            <td>studytime;</td>
+                            <td>2;</td>
+                        </tr>
+                        <tr>
+                            <td>failures;
+                            </td>
+                            <td>0;</td>
+                        </tr>
+                        <tr>
+                            <td>schoolsup;
+                            </td>
+                            <td>"yes";</td>
+                        </tr>
+                        <tr>
+                            <td>famsup;
+                            </td>
+                            <td>"no";</td>
+                        </tr>
+                        <tr>
+                            <td>paid;
+                            </td>
+                            <td>"no";</td>
+                        </tr>
+
+                        <tr>
+                            <td>activities;
+                            </td>
+                            <td>"no";</td>
+                        </tr>
+                        <tr>
+                            <td>nursery;
+                            </td>
+                            <td>"yes";</td>
+                        </tr>
+
+                        <tr>
+                            <td>higher;
+                            </td>
+                            <td>"yes";</td>
+                        </tr>
+
+                        <tr>
+                            <td>internet;
+                            </td>
+                            <td>"no";</td>
+                        </tr>
+
+                        <tr>
+                            <td>romantic;
+                            </td>
+                            <td>"no";</td>
+                        </tr>
+
+                        <tr>
+                            <td>famrel;
+                            </td>
+                            <td>"4";</td>
+                        </tr>
+
+                        <tr>
+                            <td>freetime;
+                            </td>
+                            <td>"3";</td>
+                        </tr>
+
+                        <tr>
+                            <td>goout;
+                            </td>
+                            <td>"4";</td>
+                        </tr>
+
+                        <tr>
+                            <td>Dalc;
+                            </td>
+                            <td>"1";</td>
+                        </tr>
+
+                        <tr>
+                            <td>Walc;
+                            </td>
+                            <td>"1";</td>
+                        </tr>
+
+                        <tr>
+                            <td>health;
+                            </td>
+                            <td>"3";</td>
+                        </tr>
+
+                        <tr>
+                            <td>absences;
+                            </td>
+                            <td>"6";</td>
+                        </tr>
+
+                        <tr>
+                            <td>G1;
+                            </td>
+                            <td>"5";</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>G2;
+                            </td>
+                            <td>"6";</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td>G3;
+                            </td>
+                            <td>"6";</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            
+            <p>
+                Majd 400 diák adatai álnak a rendelkezésünkre, ami az egyszerű példánk szemléltetésére bőven
+                elegendő.
+            </p>
+            <hr />
+
+            <article id="tart5">
+                <h2>2.lépés</h2>
+                <p>    
+                        Nyissunk egy Python file-t amibe
+                        importáljuk az alábbi modulokat(ha
+                        nincsenek ezek a modulok telepítve akkor
+                        telepítse őket, javaslatom hogy használja
+                        <a class="inline-link" href="https://www.anaconda.com/">ezt a weboldalt</a>.
+                </p>
+                <div class="code">
+                <pre><code>import pandas as pd
+import numpy as np
+import sklearn
+from sklearn import linear_model</code></pre>
+            </div>
+                <hr />
+            </article>
+
+
+
+            <article id="tart6">
+               <h2>3.lépés</h2>
+               <p>Töltsük be az adatokat.Ha az adatok "student-mat.csv" néven
+                szerepelnek ugyanabban a könyvtárban ahol a Python scriptünk
+                van
+                Akkor a:
+                <div class="code">
+                    <pre><code>data = pd.read_csv("student-mat.csv", sep=";")</code></pre>
+                </div>
+
+                <p>,sorral tudjuk ezt megtenni.
+                    A sep=";" paraméterrel jelezzük, hogy az adatok a ";" karakterrel
+                    vannak elválasztva egymástól.
+                    Mivel nekünk nincs szükségünk csak azokra az adatokra, amik
+                    szerintünk befolyásolják a végső jegyet a</p>
+            </p>
+            <div class="code">
+                <pre><code>data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]]</code></pre>
+            </div>
+            <p>,soral kiválasztjuk a következő adatokat:
+            </p>
+
+            <ol>
+                <li>első félévben szerzet jegy</li>
+                <li>második félévben szerzet jegy</li>
+                <li>végső jegy
+                </li>
+                <li>mennyi időt tanult a diák
+                </li>
+                <li>hányszor bukott meg eddig</li>
+                <li>hány óráról hiányzott
+                </li>
+            </ol>
+            </article>
+
+
+            <article id="tart7">
+               <h2>4.lépés</h2>
+               <p>Osszuk fel az adatokat két részre. Az adatok egyik részén
+                fog a modellünk tanulni.A másik részén pedig leteszteljük
+                majd a modellünket.Ezt azért csináljuk, mert olyan eset is
+                bekövetkezhet, hogy a modelünk "túl szakosodik" vagyis
+                azokra az adatoknál amin tanul nagyon jó eredményeket
+                ér el, de új adatokon nem.</p>
+
+                <div class="code">
+                    <pre><code>predict = "G3"
+X = np.array(data.drop([predict], 1))
+Y = np.array(data[predict])
+x_train, x_test, y_train, y_test =
+sklearn.model_selection.train_test_split(X, Y, test_size=0.1)</code></pre>
+                </div>
+
+
+                <p>
+                    predict = "G3"-mal azt mondtuk, hogy ennek az adatnak a
+tippelésére tanítjuk meg a modellünket. ( G3 a diák végső
+jegyét jelöli)
+
+                </p>
+            </article>
+
+            <article id="tart8">
+               <h2>5.lépés</h2>
+               <p>A következő lépésben a sklearn modul segítségével
+                megalkossuk a modellünket.</p>
+                <div class="code">
+                    <pre><code>linear = linear_model.LinearRegression()
+linear.fit(x_train, y_train)</code></pre>
+                </div>
+                <p>
+                    majd leteszteljük a moddelünket az általunk félre tett teszt
+adatunkon, az elért pontosságot pedig kinyomtatjuk:
+                </p>
+
+                <div class="code">
+                    <pre><code>acc = linear.score(x_test, y_test)
+print(acc)</code></pre>
+                </div>
+<p>Kimenet:</p>
+<samp>
+    0.879873221125009
+</samp>
+
+
+<p>
+    Wow....vagyis egy pár sor kóddal képesek voltunk 87
+    százalék pontosságal megtippelni a diákok végső jegyét.
+</p>
+            </article>
+
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer class="footer ">
+        <div class="container f2 ">
+            <span class="text-muted ">@2022 Contact:<a class="inline-link" href="mailto: 1413david@gmail.com">1413david@gamil.com</a>.</span>
+        </div>
+    </footer>
+</body>
