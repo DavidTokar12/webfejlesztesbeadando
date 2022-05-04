@@ -29,12 +29,14 @@
   .text-wrapper {
     padding-top: calc(var(--navbar-height) + 6rem);
     padding-right: 0;
+    padding-left: 0;
   }
   .inner-text-wrapper {
     width: 20rem;
   }
   .footer {
     width: 100%;
+    padding-left: 0;
   }
   .focim{
     line-height: 4rem;

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
@@ -9,203 +8,345 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./altalanos.css" />
     <link rel="stylesheet" href="./desktop.css" />
     <link rel="stylesheet" href="./tablet.css" />
     <link rel="stylesheet" href="./phone.css" />
     <link rel="stylesheet" href="./color.css" />
-    <link rel="stylesheet" href="./image.css">
-    
-    
-    
-    
+    <link rel="stylesheet" href="./image.css" />
+    <link rel="stylesheet" media="print" href="./print.css" />
+
     <script src="app_color.js"></script>
     <script src="linkek.js"></script>
     <script src="images.js"></script>
+  </head>
 
- 
-
-</head>
-
-</html>
-
-<body>
+  <body>
+    <a class="hiden-link" onclick="goTo(event,1)" href="tart1"
+      >Ugrás a tartalomra</a
+    >
     <!-- Navbar -->
     <!-- Navbar -->
-    <navbar class="navbar fixed-top">
-        <div class="container-fluid d-flex justify-content-between">
-            <img id="logo" src="./media/logo_transparent_dark.png" alt="" width="50" height="50" />
+    <header class="navbar fixed-top">
+      <div class="container-fluid d-flex justify-content-between">
+        <img
+          id="logo"
+          src="./media/logo_transparent_dark.png"
+          alt=""
+          width="50"
+          height="50"
+        />
 
-            <div class="form-check custom-control custom-switch form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
-                    onclick="changeColorTheme(event)" checked />
-            </div>
+        <div class="form-check custom-control custom-switch form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckChecked"
+            onclick="changeColorTheme(event)"
+            checked
+          />
         </div>
-    </navbar>
+      </div>
+    </header>
     <!-- Navbar -->
     <!-- Navbar -->
 
     <aside id="aside">
-        <nav class="link-wrapper">
-            <a href="./index.html" class="plink plink-first text-center  border" aria-current="page">MI/AI</a>
-            <a href="./gepitanulas.html" class="plink text-center  border">GÉPI TANULÁS</a>
-            <a href="./neuralis.html" class="plink text-center  border">NEURLÁLIS HÁLÓZATOK</a>
-            <a href="./minimax.html" class="plink plink-last text-center active border">MINIMAX ALGORITMUS</a>
-        </nav>
+      <nav class="link-wrapper">
+        <a
+          href="./index.html"
+          class="plink plink-first text-center border"
+          aria-current="page"
+          >MI/AI</a
+        >
+        <a href="./gepitanulas.html" class="plink text-center border"
+          >GÉPI TANULÁS</a
+        >
+        <a href="./neuralis.html" class="plink text-center border"
+          >NEURLÁLIS HÁLÓZATOK</a
+        >
+        <a
+          href="./minimax.html"
+          class="plink plink-last text-center active border"
+          >MINIMAX ALGORITMUS</a
+        >
+      </nav>
 
-        <nav class="tartalom-wrapper">
-            <ul class="linkek">
-                <li class="tartalom-link-style"><a class="tartalom-link" id="tlink1" onclick="goTo(event,1)" href="tart1"> Mi az a minimax algoritmus?</a></li>
-                <li  class="tartalom-link-style"><a  class="tartalom-link" id="tlink2" onclick="goTo(event,2)" href="tart2">Ez nem ilyen egyszerű...</a></li>
-                <li  class="tartalom-link-style"><a class="tartalom-link"  id="tlink3" onclick="goTo(event,3)" href="tart3">Tic-Tac-Toe</a></li>
-                <li  class="tartalom-link-style"><a class="tartalom-link"  id="tlink4" onclick="goTo(event,4)" href="tart4">A kód</a></li>
-            </ul>
-        </nav>
+      <nav class="tartalom-wrapper">
+        <ul class="linkek">
+          <li class="tartalom-link-style">
+            <a
+              class="tartalom-link"
+              id="tlink1"
+              onclick="goTo(event,1)"
+              href="tart1"
+            >
+              Mi az a minimax algoritmus?</a
+            >
+          </li>
+          <li class="tartalom-link-style">
+            <a
+              class="tartalom-link"
+              id="tlink2"
+              onclick="goTo(event,2)"
+              href="tart2"
+              >Ez nem ilyen egyszerű...</a
+            >
+          </li>
+          <li class="tartalom-link-style">
+            <a
+              class="tartalom-link"
+              id="tlink3"
+              onclick="goTo(event,3)"
+              href="tart3"
+              >Tic-Tac-Toe</a
+            >
+          </li>
+          <li class="tartalom-link-style">
+            <a
+              class="tartalom-link"
+              id="tlink4"
+              onclick="goTo(event,4)"
+              href="tart4"
+              >A kód</a
+            >
+          </li>
+        </ul>
+      </nav>
     </aside>
-    <div class="text-wrapper ">
-        <div class="inner-text-wrapper ">
+    <div class="text-wrapper">
+      <div class="inner-text-wrapper">
+        <article id="tart1">
+          <h1>
+            Mi az a<br />
+            <span class="focim">Minimax</span><br />
+            <span class="focim">Algoritmus</span>?
+          </h1>
 
-            <article id="tart1">
-                <h1>
-                    Mi az a<br />
-                    <span class="focim ">Minimax</span><br />
-                    <span class="focim ">Algoritmus</span>?
-                </h1>
-                <p>
-                    <blockquote cite="https://hu.wikipedia.org/wiki/Minimax_elv">
-                        "A minimax elv a döntéselméletben, a játékelméletben és a
-                        statisztikában alkalmazott döntési szabály, ami szerint azt a
-                        lehetőséget kell választani, ami minimalizálja a maximális
-                        veszteséget. Felfogható a minimális nyereség
-                        maximalizálásaként is." 
-                   </blockquote>
-            </p>
+          <div class="row d-flex align-items-center justify-content-center">
+            <div class="col col-12 col-lg-6">
+              <blockquote cite="https://hu.wikipedia.org/wiki/Minimax_elv">
+                "A <b>minimax</b> elv a döntéselméletben, a játékelméletben és a
+                statisztikában alkalmazott döntési szabály, ami szerint azt a
+                lehetőséget kell választani, ami
+                <b>minimalizálja a maximális veszteséget</b>. Felfogható a
+                <b>minimális nyereség maximalizálásaként</b> is." Itt főleg a
+                játékelméretről fogunk beszélni.Vagyis ha szeretnénk írni egy
+                programot ami nagyon jól tud sakkozni, akkor a minimax
+                algoritmus a segítségünkre lehet.Képzeljük el, hogy találtunk
+                egy módszert arra, hogy minden sakk felállásra egy pontszámot
+                tudjunk adni.
+              </blockquote>
+            </div>
+            <div class="col col-12 col-lg-6">
+              <p>
+                Minél nagyobb a pontszám annál inkább a fehér játékos áll
+                nyerésre, minél kisebb annál inkább a fekete, ha a pontszám 0
+                akkor pedig döntetlen az állás.A sakk-matt érjen plusz végtelen
+                vagy negatív végtelen pontot, attól függ melyik játékos adja.Így
+                ha a fehér játékos a program, úgy fog lépni, hogy az ő pontja a
+                lehető legnagyobb legyen,és felteszi, hogy az ellenfele mindig
+                tökéletesen lép, ezért az összes olyan lehetőséget kerüli ahol a
+                fehér játékosnak van lehetősége a sakk-mattra.Vagyis azt fogja
+                feltételezni, hogy az ellenfél mindig azokat a lehetőségeket
+                választja ahol az ő pontszáma ebben az esetben a minimális.
+              </p>
+            </div>
+          </div>
 
-            <p>
-                Itt főleg a játékelméretről fogunk beszélni.Vagyis ha szeretnénk
-                írni egy programot ami nagyon jól tud sakkozni, akkor a
-                minimax algoritmus a segítségünkre lehet.Képzeljük el, hogy
-                találtunk egy módszert arra, hogy minden sakk felállásra egy
-                pontszámot tudjunk adni.Minél nagyobb a pontszám annál
-                inkább a fehér játékos áll nyerésre, minél kisebb annál inkább a
-                fekete, ha a pontszám 0 akkor pedig döntetlen az állás.A sakkmatt érjen plusz végtelen vagy negatív végtelen pontot, attól
-                függ melyik játékos adja.Így ha a fehér játékos a program, úgy
-                fog lépni, hogy az ő pontja a lehető legnagyobb legyen, és
-                felteszi, hogy az ellenfele mindig tökéletesen lép, ezért az
-                összes olyan lehetőséget kerüli ahol a fehér játékosnak van
-                lehetősége a sakk-mattra.Vagyis azt fogja feltételezni, hogy az
-                ellenfél mindig azokat a lehetőségeket választja ahol az ő
-                pontszáma ebben az esetben a minimális.
-            </p>
-                <hr />
-            </article>
+          <hr />
+        </article>
 
+        <article id="tart2">
+          <h2>Ez nem ilyen egyszerű...</h2>
 
-            <article id="tart2">
-                <h2>
-                    Ez nem ilyen egyszerű...
-                </h2>
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col col-12 col-lg-6">
+              <p>
+                Ez minden gyönyörűen hangzik, de sajnos a valóságba ennyire nem
+                az, mivel egyrészt jól lepontozni egy sakk felállást nem
+                egyszerű hihetetlenül sok mindenre kell figyelni, még
+                számÍtógépeknek is meggyűlik vele a baja.
+              </p>
+            </div>
+            <div class="col col-12 col-lg-6">
+              <p>
+                Másrészt, sakkban az első 10 lépés
+                169,518,829,100,544,000,000,000,000,000 féle képen történhet.
+                Vagyis hihetetlen optimalizálásokra van szükség ahhoz, hogy egy
+                program sakkozni tudjon.(<a
+                  class="inline-link"
+                  href="https://youtu.be/U4ogK0MIzqk"
+                  >Lásd milyen kihívás egy sakkozó képes programot készíteni</a
+                >)
+              </p>
+            </div>
+          </div>
 
-                <hr />
-                <p>
-                    Ez minden gyönyörűen hangzik, de sajnos a valóságba ennyire
-                    nem az, mivel egyrészt jól lepontozni egy sakk felállást nem
-                    egyszerű hihetetlenül sok mindenre kell figyelni, még
-                    számÍtógépeknek is meggyűlik vele a baja.
-                    Másrészt, sakkban az első 10 lépés
-                    169,518,829,100,544,000,000,000,000,000 féle képen
-                    történhet. Vagyis hihetetlen
-                    optimalizálásokra ( <a class="inline-link" href="https://youtu.be/U4ogK0MIzqk">Lásd bővebben</a> ) van szükség ahhoz, hogy egy program
-                    sakkozni tudjon
-                </p>
-                <hr />
-            </article>
+          <hr />
 
-            <article id="tart3">
-                <h2>Tic-Tac-Toe</h2>
-                <hr />
-                <p>
-                    De egy egyszerű játékkal mint például a Tic-Tac-Toe - val nem
-                    gyűlik meg a bajunk.Itt 3 lehetséges pontszáma lehet egy
-                    felállásnak, amikor "X" - nyer, amikor "O"-nyer vagy amikor
-                    döntetlen a játszma.
-                </p>
+          <hr />
+        </article>
 
+        <article id="tart3">
+          <h2>Tic-Tac-Toe</h2>
+          <hr />
 
-                <img class="page-images white-bg" onclick="openImage(event)"  id="closedImage7" src="./media/minimax1.png" alt="">
-                
-                <div class="openImageWrapper" id="openImage7">
-                    <button type="button" onclick="closeImage(event)" class="btn-close btn-close-white" aria-label="Close"></button>
-                    <img  src="./media/minimax1.png" class="openImg white-bg" >
-                </div>
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col col-12 col-lg-6">
+              <p>
+                De egy egyszerű játékkal mint például a Tic-Tac-Toe - val nem
+                gyűlik meg a bajunk.Itt 3 lehetséges pontszáma lehet egy
+                felállásnak, amikor "X" - nyer, amikor "O"-nyer vagy amikor
+                döntetlen a játszma.A programunk valami ilyesmit fog
+                látni.Minden egyes lehetőségből több lehetőség csÍrázik, egészen
+                addig ameddig egy "terminal statebe" nem jutunk. A 3 "terminal
+                state" valamelyikébe:
+              </p>
+            </div>
+            <div class="col col-12 col-lg-6">
+              <img
+                class="rescontent white-bg"
+                onclick="openImage(event)"
+                id="closedImage7"
+                src="./media/minimax1.png"
+                alt="Egy üres Tic-Tac-Toe táblából kicsírázó lehetőségek."
+              />
 
-                <p>A programunk valami ilyesmit fog látni.Minden egyes
-                    lehetőségből több lehetőség csÍrázik, egészen addig ameddig
-                    egy "terminal statebe" nem jutunk. A 3 "terminal state" valamelyikébe:
-                    </p>
+              <div class="openImageWrapper" id="openImage7">
+                <button
+                  type="button"
+                  onclick="closeImage(event)"
+                  class="btn-close btn-close-white"
+                  aria-label="Close"
+                ></button>
+                <img
+                  src="./media/minimax1.png"
+                  alt=""
+                  class="openImg white-bg"
+                />
+              </div>
+            </div>
+          </div>
+          <div>
+            <img
+              class="rescontent"
+              onclick="openImage(event)"
+              style="background-color: white"
+              id="closedImage8"
+              src="./media/minimax2.png"
+              alt="Egy Tic-Tac-Toe tábla ahol X nyert,egy ahol O nyert, egy ahol döntetlen lett."
+            />
 
-                <img class="page-images" onclick="openImage(event)" style="background-color: white;" id="closedImage8" src="./media/minimax2.png" alt="">
-                
-                    <div class="openImageWrapper" id="openImage8">
-                        <button type="button" onclick="closeImage(event)" class="btn-close btn-close-white" aria-label="Close"></button>
-                        <img  src="./media/minimax2.png" class="openImg white-bg" >
-                    </div>
+            <div class="openImageWrapper" id="openImage8">
+              <button
+                type="button"
+                onclick="closeImage(event)"
+                class="btn-close btn-close-white"
+                aria-label="Close"
+              ></button>
+              <img src="./media/minimax2.png" alt="" class="openImg white-bg" />
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col col-12 col-lg-6">
+              Most azt a kérdést teheti fel, hogy mennyi pontot ér az a
+              lehetőség ahol ezek közül egyik sem igaz.Hát.....ha olyan
+              helyzetbe kerültünk, hogy "O" nem tudja megakadályozni, hogy "X"
+              nyerjen, akkor annak a felállásnak is 1 a pontszáma(fordítva
+              -1).Ha még nincs eldöntve semmi, akkor pedig 0. Vagyis ennél a
+              példánál egy felállás pontszáma függ a belőle kicsirázó további
+              felállások pontjaitól.
+            </div>
+            <div class="col col-12 col-lg-6">
+              <p>
+                A program átszalad az összes lehetőségén és ha kitudja
+                választani azt a helyzetet ahol az ellenfél nem tudja sehogy
+                megakadályozni veszteségét akkor biztosan megteszi, és biztosan
+                elkerüli azt a helyzetet ahol vele is ez történne. Vagyis, ez
+                ellen a program ellen a legjobb lehetséges végeredmény a
+                döntetlen, és ez is csak akkor teljesül ha tökéletesen játszunk
+                (eléggé menőn hangzik) .
+              </p>
+            </div>
+          </div>
 
+          <hr />
+        </article>
 
-                <p>Most azt a kérdést teheti fel, hogy mennyi pontot ér az a
-                    lehetőség ahol ezek közül egyik sem igaz.Hát.....ha olyan
-                    helyzetbe kerültünk, hogy "O" nem tudja megakadályozni, hogy
-                    "X" nyerjen, akkor annak a felállásnak is 1 a pontszáma(fordítva
-                    -1).Ha még nincs eldöntve semmi, akkor pedig 0. Vagyis ennél a
-                    példánál egy felállás pontszáma függ a belőle kicsirázó további
-                    felállások pontjaitól.A program átszalad az összes lehetőségén
-                    és ha kitudja választani azt a helyzetet ahol az ellenfél nem
-                    tudja sehogy megakadályozni veszteségét akkor biztosan
-                    megteszi, és biztosan elkerüli azt a helyzetet ahol vele is ez
-                    történne. Vagyis, ez ellen a program ellen a legjobb lehetséges
-                    végeredmény a döntetlen, és ez is csak akkor teljesül ha
-                    tökéletesen játszunk (eléggé menőn hangzik) .
-                    </p>
-                <hr />
-            </article>
+        <article id="tart4">
+          <h2>A kód:</h2>
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col col-12 col-lg-6">
+              <p>
+                Először szükségünk lesz a játék megalkotására.Szükségünk van egy
+                "checkWinner" fügvényre ami leteszteli, hogy épen egy terminal
+                state be vagyunk-e, ha igen vissza adja, hogy ki nyert, vagy,
+                hogy döntetlen lett e a játszma. A jelenlegi felálást pedig
+                reprezentáljuk egy 2D-s tömbbel. Ez valahogy Így fest:
+              </p>
+            </div>
+            <div class="col col-12 col-lg-6">
+              <div class="code">
+                <pre><code>board = [["","x",""],["O","",""],["","",""]]</code></pre>
+              </div>
+            </div>
+          </div>
 
-
-            <article id="tart4">
-                <h2>A kód:</h2>
-               <p>
-                Először szükségünk lesz a játék megalkotására.Szükségünk van
-                egy "checkWinner" fügvényre ami leteszteli, hogy épen egy
-                terminal state be vagyunk-e, ha igen vissza adja, hogy ki nyert,
-                vagy, hogy döntetlen lett e a játszma.
-                A jelenlegi felálást pedig reprezentáljuk egy 2D-s tömbbel.
-                Ez valahogy Így fest:
-               </p>
-
-               <div class="code">
-                <pre><code>board = [["","x",""],["O","",""],["","",""]]</code></pre></div>
-
-                <p>
-                    Egy kis fantáziával rálehet jönni mi mit takar.
-                </p>
-
-                <p>
-                    Majd meglehet írni az algoritmusunkat:
-                </p>
-
-                <div class="code">
-                    <pre><code>function minimax(board, depth, isMaximizing) {
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col col-12 col-lg-6">
+              <p>
+                Egy kis fantáziával rálehet jönni mi mit takar. Majd meglehet
+                írni az algoritmusunkat: Húha...mi is történik itt? Vagyis a
+                függvény kap 3 paramétert.A "board"- a jelenlegi felállást
+                takarja.A második paraméter "depth" ami a mélységet jelenti.Ugye
+                ez egy rekurzív függvény, és ezzel mérjük azt hogy milyen mélyen
+                vagyunk épen a rekurzióban.A harmadik paraméter "isMaximazing"
+                pedig azt adja meg hogy melyik játékos van épen a soron.Ugye a
+                programnak az ellenfél lépéseit is átkel gondolnia ahhoz, hogy
+                nyerjen(persze ezt nem osztja meg vele).A program alap esete
+                (amikor a rekurzió véget ér) az ha egy terminal state be
+                kerülünk.Ilyenkor figyelembe véve azt, hogy az algoritmus
+                feltételezi, hogy az ellenfél is a lehető legjobb lépést lépi,
+                ezért hogyha úgy jutottunk egy terminal statebe, hogy az
+                ellenfél a lehető legjobb lépéseit lépte, felküldi a pontszámot
+                a rekurzióban,és minden játék állás pontszáma, amiből az adott
+                terminal state kicsírázott egyenlő lesz a terminal state
+                pontszámával.Ha nem az alap esetben vagyunk pedig attól függően,
+                hogy épen maximalizálunk vagy minimalizálunk (attól függ melyik
+                játékos van soron), megtudja az összes lehetséges lépést és meg
+                is lépi azt.Majd az új "board"-al folytatjuk a rekurziót ameddig
+                egy terminal statebe jutunk. Miután megtudta a pontszámot persze
+                törli a lépést, mivel csak akkor tudja, hogy véglegesen mit lép
+                ha az összes lehetőségen túl van.Így minden lehetőség kap egy
+                pontot.Vagyis ha a program egy nem terminal statere például 1
+                pontot ad, az azt jelenti, hogy az ellenfele tökéletesen is
+                léphet, akkor is veszteni fog.
+              </p>
+            </div>
+            <div class="col col-12 col-lg-6">
+              <div class="code">
+                <pre><code>function minimax(board, depth, isMaximizing) {
 let result = checkWinner();
 if (result !== null) {
     return scores[result];
 }
 if (isMaximizing) {
     let bestScore = -Infinity;
-for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
+for (let i = 0; i &#60; 3; i++) {
+    for (let j = 0; j &#60; 3; j++) {
         // Is the spot available?
         if (board[i][j] == '') {
             board[i][j] = ai;
@@ -218,8 +359,8 @@ for (let i = 0; i < 3; i++) {
 return bestScore;
 }else {
     let bestScore = Infinity;
-    for (let i = 0; i < 3; i++) {
-        for (let j = 0; j < 3; j++) {
+    for (let i = 0; i &#60; 3; i++) {
+        for (let j = 0; j &#60; 3; j++) {
             // Is the spot available?
             if (board[i][j] == '') {
                 board[i][j] = human;
@@ -229,47 +370,21 @@ return bestScore;
             }
         }
     }
-return bestScore;
+    return bestScore;
     }
 }
-</code></pre></div>
+        </code></pre>
+              </div>
+            </div>
+          </div>
 
-            <p>
-                    Húha...mi is történik itt?
-                Vagyis a függvény kap 3 paramétert.A "board"- a jelenlegi
-                felállást takarja.A második paraméter "depth" ami a mélységet
-                jelenti.Ugye ez egy rekurzív függvény, és ezzel mérjük azt hogy
-                milyen mélyen vagyunk épen a rekurzióban.A harmadik
-                paraméter "isMaximazing" pedig azt adja meg hogy melyik
-                játékos van épen a soron.Ugye a programnak az ellenfél
-                lépéseit is átkel gondolnia ahhoz, hogy nyerjen(persze ezt nem
-                osztja meg vele).A program alap esete (amikor a rekurzió véget
-                ér) az ha egy terminal state be kerülünk.Ilyenkor figyelembe
-                véve azt, hogy az algoritmus feltételezi, hogy az ellenfél is a
-                lehető legjobb lépést lépi, ezért hogyha úgy jutottunk egy
-                terminal statebe, hogy az ellenfél a lehető legjobb lépéseit
-                lépte, felküldi a pontszámot a rekurzióban,és minden játék állás
-                pontszáma, amiből az adott terminal state kicsírázott egyenlő
-                lesz a terminal state pontszámával.Ha nem az alap esetben
-                vagyunk pedig attól függően, hogy épen maximalizálunk vagy
-                minimalizálunk (attól függ melyik játékos van soron), megtudja
-                az összes lehetséges lépést és meg is lépi azt.Majd az új
-                "board"-al folytatjuk a rekurziót ameddig egy terminal statebe
-                jutunk. Miután megtudta a pontszámot persze törli a lépést,
-                mivel csak akkor tudja, hogy véglegesen mit lép ha az összes
-                lehetőségen túl van.Így minden lehetőség kap egy pontot.Vagyis
-                ha a program egy nem terminal statere például 1 pontot ad, az
-                azt jelenti, hogy az ellenfele tökéletesen is léphet, akkor is
-                veszteni fog.
-            </p>
-
-            <div class="code">
-                <pre><code>function bestMove() {
+          <div class="code">
+            <pre><code>function bestMove() {
 // AI to make its turn
 let bestScore = -Infinity;
 let move;
-for (let i = 0; i < 3; i++) {
-    for (let j = 0; j < 3; j++) {
+for (let i = 0; i &#60; 3; i++) {
+    for (let j = 0; j &#60; 3; j++) {
         // Is the spot available?
         if (board[i][j] == '') {
             board[i][j] = ai;
@@ -284,23 +399,33 @@ for (let i = 0; i < 3; i++) {
 }
 board[move.i][move.j] = ai;
 currentPlayer = human;
-}</code></pre></div>
-                <hr />
-         <p>
-            Ezzel a függvényel hivjuk elő az algoritmust,
-            a fügvény végen ( board[move.i][move.j] = ai) már megis lépjük
-            azt a lépést aminek a legjobb a pontszáma.
-         </p>
-         
-         <a class="inline-link" href="./tic_tac_toe/index.html">Az algoritmust le is lehet tesztelni.</a>
-         </article>
-        </div>
+}</code></pre>
+          </div>
+          <hr />
+          <p>
+            Ezzel a függvényel hivjuk elő az algoritmust, a fügvény végen (
+            board[move.i][move.j] = ai) már megis lépjük azt a lépést aminek a
+            legjobb a pontszáma.
+          </p>
+
+          <div class="text-center">
+            <a class="inline-link" href="./tic_tac_toe/index.html"
+              >Tesztelje le a minimax algoritmust.</a
+            >
+          </div>
+        </article>
+      </div>
     </div>
-</div>
-</div>
-    <footer class="footer ">
-        <div class="container f2 ">
-            <span class="text-muted ">@2022 Contact:<a class="inline-link" href="mailto: 1413david@gmail.com">1413david@gamil.com</a>.</span>
-        </div>
+    <footer class="footer">
+      <div class="container f2">
+        <span class="text-muted"
+          >@2022 Contact:<a
+            class="inline-link"
+            href="mailto:1413david@gmail.com"
+            >1413david@gamil.com</a
+          >.</span
+        >
+      </div>
     </footer>
-</body>
+  </body>
+</html>

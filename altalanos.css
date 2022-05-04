@@ -3,13 +3,14 @@
   --border-size: 0.2rem;
 }
 * {
-  font-family: "Inconsolata", monospace;
+  font-family: sans-serif;
   line-height: 3rem;
 }
-p,
-article,
-section {
-  font-family: sans-serif;
+.hidden-link{
+  margin-left: -9999px;
+}
+h1,h2,h3,a {
+  font-family: "Inconsolata", monospace;
 }
 video {
   max-width: 100%;
@@ -32,7 +33,7 @@ aside {
   position: fixed;
   overflow-x: hidden;
   top: var(--navbar-height);
-  right: 0;
+  left: 0;
   display: flex;
   justify-content: flex-start;
   z-index: 100;
@@ -75,7 +76,6 @@ aside {
 }
 
 .footer {
-  left: 0;
   bottom: 0;
   border-top: var(--border-size) solid;
   color: white;
@@ -99,6 +99,7 @@ td {
   align-items: center;
   justify-content: center;
   padding-bottom: 5rem;
+  text-align: left;
 }
 
 h1 {
@@ -136,4 +137,8 @@ figure {
 
 .white-bg {
   background-color: white;
+}
+.rescontent{
+  width: 100%;
+  max-width: 50rem;
 }

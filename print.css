@@ -1,0 +1,57 @@
+@media print {
+  * {
+    line-height: 2rem;
+  }
+  body,
+  html {
+    margin: 0;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    width: 100%;
+  }
+  .text-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+  header,
+  footer,
+  nav,
+  form,
+  iframe,
+  .menu,
+  .navbar,
+  video {
+    display: none;
+  }
+  aside {
+    display: none;
+    width: 0% !important;
+  }
+  .not-printable {
+    display: none;
+  }
+  article a {
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  ul,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+
+  table {
+    page-break-inside: avoid;
+  }
+  code {
+    page-break-inside: avoid;
+  }
+}

@@ -20,13 +20,13 @@
   }
   .text-wrapper {
     padding-top: var(--navbar-height);
-    padding-right: 20rem;
+    padding-left: 20rem;
   }
   .inner-text-wrapper{
     width: 25rem;
 }
 .footer{
-    width: calc(100% - 20rem);
+    padding-left: 20rem;
 }
 .focim{
   font-size: 3rem;

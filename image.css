@@ -1,7 +1,5 @@
-.page-images {
-  width: 100%;
-}
-.page-images:hover {
+
+.rescontent:not(video):hover {
   opacity: 0.4;
   cursor: pointer;
 }

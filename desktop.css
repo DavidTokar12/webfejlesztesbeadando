@@ -1,6 +1,6 @@
 aside {
   height: 100%;
-  border-left: var(--border-size) solid;
+  border-right: var(--border-size) solid;
   width: 28rem;
 }
 .plink {
@@ -16,8 +16,8 @@ aside {
   align-items: center;
   justify-content: center;
 }
-.inner-text-wrapper{
-  width: 32rem;
+.inner-text-wrapper {
+  width: 60%;
 }
 .plink-first {
   border-radius: 1rem 0 0 1rem;
@@ -25,10 +25,10 @@ aside {
 .plink-last {
   border-radius: 0 1rem 1rem 0;
 }
-.footer{
-    width: calc(100% - 28rem);
+.footer {
+  padding-left: 28rem;
 }
 .text-wrapper {
   padding-top: var(--navbar-height);
-  padding-right: 28rem;
+  padding-left: 28rem;
 }
