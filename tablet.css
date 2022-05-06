@@ -22,6 +22,9 @@
     padding-top: var(--navbar-height);
     padding-left: 20rem;
   }
+  table{
+    font-size: 50%;
+  }
   .inner-text-wrapper{
     width: 25rem;
 }

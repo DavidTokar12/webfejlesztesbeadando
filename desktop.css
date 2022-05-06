@@ -19,6 +19,9 @@ aside {
 .inner-text-wrapper {
   width: 60%;
 }
+table{
+  font-size: 62%;
+}
 .plink-first {
   border-radius: 1rem 0 0 1rem;
 }

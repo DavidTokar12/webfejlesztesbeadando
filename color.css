@@ -23,6 +23,7 @@
   --link-btn-color: #effffd;
   --submit-btn-color: #b8d7ff;
   --hover-color: #59b1f8dc;
+  --font-size:100%
 }
 
 :root,
@@ -53,32 +54,32 @@
   --submit-btn-color: #00b3fe;
   --link-btn-color: #9465e0;
   --hover-color: #9465e0;
+  --font-size:103%;
 }
-
 * {
   transition: background-color 0.5s ease;
   transition: color 0.3s ease;
+  transition: font-size 0.3 ease;
   color: var(--text-color);
+  font-size: var(--font-size);
 }
-
 .tartalom-link {
   color: var(--text-color);
 }
+
 
 .tartalom-link:hover {
   color: var(--hover-color);
   transition: color 0s ease;
 }
+.inline-link:visited{
+  color: #541a8b70;
+}
 
 .current {
   color: var(--code-color);
 }
-.inline-link {
-  color: var(--cim-color);
-}
-.inline-link:hover {
-  color: var(--hover-color);
-}
+
 .footer {
   background-color: var(--main-color);
   border-color: var(--border-color) !important;
